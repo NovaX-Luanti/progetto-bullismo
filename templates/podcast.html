@@ -6,13 +6,15 @@
     <h3>Episodio 1</h3>
     <p><!-- TODO: descrizione dal PDF --></p>
     <audio id="audio1" src="{{ url_for('static', filename='audio/episodio1.mp3') }}"></audio>
-    <button onclick="playAudio('audio1')">Play/Pausa</button>
+    <button onclick="playAudio('audio1'); syncProgress('audio1', this.nextElementSibling.querySelector('input'))">Play/Pausa</button>
+    <div class="progress"><input type="range" value="0" min="0" max="100" step="0.1"></div>
   </div>
   <div>
     <h3>Episodio 2</h3>
     <p><!-- TODO: descrizione dal PDF --></p>
     <audio id="audio2" src="{{ url_for('static', filename='audio/episodio2.mp3') }}"></audio>
-    <button onclick="playAudio('audio2')">Play/Pausa</button>
+    <button onclick="playAudio('audio2'); syncProgress('audio2', this.nextElementSibling.querySelector('input'))">Play/Pausa</button>
+    <div class="progress"><input type="range" value="0" min="0" max="100" step="0.1"></div>
   </div>
 </div>
 {% endblock %}
