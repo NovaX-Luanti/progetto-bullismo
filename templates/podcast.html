@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Episodi del podcast</h2>
+<div class="grid-2">
+  <div>
+    <h3>Episodio 1</h3>
+    <p><!-- TODO: descrizione dal PDF --></p>
+    <audio id="audio1" src="{{ url_for('static', filename='audio/episodio1.mp3') }}"></audio>
+    <button onclick="playAudio('audio1')">Play/Pausa</button>
+  </div>
+  <div>
+    <h3>Episodio 2</h3>
+    <p><!-- TODO: descrizione dal PDF --></p>
+    <audio id="audio2" src="{{ url_for('static', filename='audio/episodio2.mp3') }}"></audio>
+    <button onclick="playAudio('audio2')">Play/Pausa</button>
+  </div>
+</div>
+{% endblock %}

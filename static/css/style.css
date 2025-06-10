@@ -1,0 +1,51 @@
+:root {
+    --primary: #3366cc;
+    --light: #ffffff;
+    --gray: #f2f2f2;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--gray);
+}
+
+header {
+    background: var(--primary);
+    color: var(--light);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: var(--light);
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+footer {
+    background: var(--primary);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Simple responsive grid */
+section {
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 600px) {
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
