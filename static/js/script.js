@@ -17,3 +17,16 @@ function playAudio(id) {
         audio.pause();
     }
 }
+
+// Keep an input[type="range"] in sync with audio playback
+function syncProgress(audioId, range) {
+    const audio = document.getElementById(audioId);
+    if (!audio || !range) return;
+    audio.addEventListener('timeupdate', () => {
+        if (audio.duration) {
+            range.value = (audio.currentTime / audio.duration) * 100;
+        } else {
+            range.value = 0;
+        }
+    });
+}
