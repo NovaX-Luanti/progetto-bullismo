@@ -50,3 +50,18 @@ Testo e argomenti
 - non unirti mai al bullo, ecco cosa devi fare davvero
 - come aiutare una vittima 
 - come dire a qualcuno che sei vittima di bullismo per farti aiutare
+
+## Routes
+
+The small Flask application exposes a few routes that simply render HTML
+templates:
+
+| Route | Template | Purpose |
+|-------|----------|---------|
+| `/` | `index.html` | Home page welcoming the user |
+| `/bullismo` | `bullismo.html` | Introduces the topic of bullying |
+| `/cyberbullismo` | `cyberbullismo.html` | Describes cyberbullying |
+| `/podcast` | `podcast.html` | Lists podcast episodes |
+| `/riflessioni` | `riflessioni.html` | Reflection questions |
+| `/fonti` | `fonti.html` | Sources and references |
+
