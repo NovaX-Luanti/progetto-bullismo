@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Domande di riflessione</h2>
+<ul>
+  <li>
+    <button onclick="toggleAnswer('a1')">Domanda 1</button>
+    <p id="a1" style="display:none;">Risposta alla domanda 1.</p>
+  </li>
+  <li>
+    <button onclick="toggleAnswer('a2')">Domanda 2</button>
+    <p id="a2" style="display:none;">Risposta alla domanda 2.</p>
+  </li>
+</ul>
+{% endblock %}
