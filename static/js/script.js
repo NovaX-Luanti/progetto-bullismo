@@ -17,3 +17,14 @@ function playAudio(id) {
         audio.pause();
     }
 }
+
+function updateProgress(id, range) {
+    const audio = document.getElementById(id);
+    audio.currentTime = (range.value / 100) * audio.duration;
+}
+
+function syncProgress(id, range) {
+    const audio = document.getElementById(id);
+    const percent = (audio.currentTime / audio.duration) * 100;
+    range.value = percent;
+}

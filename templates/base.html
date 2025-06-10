@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
 </head>
 <body>
 <header>
     <h1>Podcast: Bullismo e Cyberbullismo</h1>
     <nav>
-        <a href="/">Home</a>
-        <a href="/bullismo">Bullismo</a>
-        <a href="/cyberbullismo">Cyberbullismo</a>
-        <a href="/podcast">Podcast</a>
-        <a href="/riflessioni">Riflessioni</a>
-        <a href="/fonti">Fonti</a>
+        <a href="/"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="/podcast"><i class="fa-solid fa-podcast"></i> Podcast</a>
+        <a href="/notizie"><i class="fa-solid fa-newspaper"></i> Notizie</a>
+        <a href="/emergenza"><i class="fa-solid fa-phone"></i> Emergenza</a>
+        <a href="/forum"><i class="fa-solid fa-comments"></i> Forum</a>
+        <a href="/consigliaci"><i class="fa-solid fa-envelope"></i> Consigliaci</a>
+        <a href="/su"><i class="fa-solid fa-users"></i> Su di noi</a>
+        <a href="/cerca"><i class="fa-solid fa-search"></i> Cerca</a>
     </nav>
 </header>
 <main>
