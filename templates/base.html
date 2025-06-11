@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+<header>
+    <h1>Podcast: Bullismo e Cyberbullismo</h1>
+    <nav>
+        <a href="/"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="/podcast"><i class="fa-solid fa-podcast"></i> Podcast</a>
+        <a href="/notizie"><i class="fa-solid fa-newspaper"></i> Notizie</a>
+        <a href="/emergenza"><i class="fa-solid fa-phone"></i> Emergenza</a>
+        <a href="/forum"><i class="fa-solid fa-comments"></i> Forum</a>
+        <a href="/consigliaci"><i class="fa-solid fa-envelope"></i> Consigliaci</a>
+        <a href="/riflessioni"><i class="fa-solid fa-question"></i> Riflessioni</a>
+        <a href="/fonti"><i class="fa-solid fa-book"></i> Fonti</a>
+        <a href="/su"><i class="fa-solid fa-users"></i> Su di noi</a>
+        <a href="/cerca"><i class="fa-solid fa-search"></i> Cerca</a>
+    </nav>
+</header>
+<main>
+    {% block content %}{% endblock %}
+</main>
+<footer>
+    <small>Progetto scolastico contro il bullismo - 2025</small>
+</footer>
+</body>
+</html>

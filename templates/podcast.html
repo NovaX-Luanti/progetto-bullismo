@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Episodi del podcast</h2>
+<div class="grid-2">
+  <div>
+    <h3>Episodio 1</h3>
+    <p><!-- TODO: descrizione dal PDF --></p>
+    <audio id="audio1" src="{{ url_for('static', filename='audio/episodio1.mp3') }}" ontimeupdate="syncProgress('audio1', this.nextElementSibling)"></audio>
+    <div class="player">
+      <button onclick="playAudio('audio1')"><i class="fa-solid fa-play"></i></button>
+      <input type="range" value="0" onchange="updateProgress('audio1', this)">
+    </div>
+  </div>
+  <div>
+    <h3>Episodio 2</h3>
+    <p><!-- TODO: descrizione dal PDF --></p>
+    <audio id="audio2" src="{{ url_for('static', filename='audio/episodio2.mp3') }}" ontimeupdate="syncProgress('audio2', this.nextElementSibling)"></audio>
+    <div class="player">
+      <button onclick="playAudio('audio2')"><i class="fa-solid fa-play"></i></button>
+      <input type="range" value="0" onchange="updateProgress('audio2', this)">
+    </div>
+  </div>
+</div>
+{% endblock %}

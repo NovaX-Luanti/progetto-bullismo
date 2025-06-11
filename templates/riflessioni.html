@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Domande di riflessione</h2>
+<ul>
+  <li>
+    <button onclick="toggleAnswer('a1')">Come puoi aiutare una vittima di bullismo?</button>
+    <p id="a1" style="display:none;">Ascoltala, sostienila e incoraggiala a chiedere aiuto a un adulto.</p>
+  </li>
+  <li>
+    <button onclick="toggleAnswer('a2')">Perché non bisogna mai unirsi al bullo?</button>
+    <p id="a2" style="display:none;">Collaborare con il bullo alimenta la violenza e rende tutti complici.</p>
+  </li>
+  <li>
+    <button onclick="toggleAnswer('a3')">Cosa dire a un amico che è vittima di cyberbullismo?</button>
+    <p id="a3" style="display:none;">Suggerisci di salvare le prove e di parlarne con qualcuno di fiducia.</p>
+  </li>
+</ul>
+{% endblock %}
