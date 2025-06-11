@@ -13,15 +13,6 @@ def index():
     """Pagina principale con presentazione del progetto."""
     return render_template('index.html', title='Home')
 
-@app.route('/bullismo')
-def bullismo():
-    """Spiega cos'è il bullismo e come affrontarlo."""
-    return render_template('bullismo.html', title='Bullismo')
-
-@app.route('/cyberbullismo')
-def cyberbullismo():
-    """Pagina dedicata al bullismo digitale."""
-    return render_template('cyberbullismo.html', title='Cyberbullismo')
 
 @app.route('/podcast')
 def podcast():
